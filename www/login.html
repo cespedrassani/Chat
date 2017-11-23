@@ -1,0 +1,138 @@
+<head>
+   <title>MoonChat</title>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/login.css">
+   <!-- Font Awesome File -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+   <div class="container">
+      <div class="row">
+         <div class="col-md-6">
+            <div class="panel with-nav-tabs panel-info">
+               <div class="panel-heading">
+                  <ul class="nav nav-tabs">
+                     <li class="active"><a href="#login" data-toggle="tab"> Login </a></li>
+                     <li><a href="#signup" data-toggle="tab"> Registrar </a></li>
+                  </ul>
+               </div>
+               <div class="panel-body">
+                  <div class="tab-content">
+                     <div id="login" class="tab-pane fade in active register">
+                        <div class="container-fluid">
+                           <div class="row">
+                              <h2 class="text-center" style="color: #5cb85c;"> <strong>Login</strong></h2>
+                              <hr />
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <div class="input-group-addon">
+                                             <span class="glyphicon glyphicon-user"></span>
+                                          </div>
+                                          <input type="text" placeholder="Nome" name="uname" class="form-control nome">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <div class="input-group-addon">
+                                             <span class="glyphicon glyphicon-lock"></span>
+                                          </div>
+                                          <input type="password" placeholder="Senha" name="pass" class="form-control senha">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr />
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <button type="submit" class="btn btn-success btn-block btn-lg" onclick="login.efetuarLogin();">Entrar</button>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div id="signup" class="tab-pane fade">
+                        <div class="container-fluid">
+                           <div class="row">
+                              <h2 class="text-center" style="color: #f0ad4e;"> <Strong> Novo Registro </Strong></h2>
+                              <hr />
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <div class="input-group-addon iga1">
+                                             <span class="glyphicon glyphicon-user"></span>
+                                          </div>
+                                          <input type="text" class="form-control nome-cadastro" placeholder="Nome" name="name">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <div class="input-group-addon iga1">
+                                             <span class="glyphicon glyphicon-user"></span>
+                                          </div>
+                                          <input type="text" class="form-control login-cadastro" placeholder="Login" name="login">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <div class="input-group-addon iga1">
+                                             <span class="glyphicon glyphicon-envelope"></span>
+                                          </div>
+                                          <input type="email" class="form-control email-cadastro" placeholder="E-Mail" name="mail">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <div class="input-group">
+                                          <div class="input-group-addon iga1">
+                                             <span class="glyphicon glyphicon-lock"></span>
+                                          </div>
+                                          <input type="password" class="form-control senha-cadastro" placeholder="Senha" name="pass">
+                                       </div>
+                                    </div>
+                                 </div>
+                              </div>
+                              <hr>
+                              <div class="row">
+                                 <div class="col-xs-12 col-sm-12 col-md-12">
+                                    <div class="form-group">
+                                       <button type="submit" class="btn btn-lg btn-block btn-warning" onclick="cadastro.efetuarCadastro();"> Registrar</button>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+<script src="js/chat.js"></script>
+<script src="js/util.js"></script>
+<script src="js/login.js"></script>
+<script src="js/cadastro.js"></script>
